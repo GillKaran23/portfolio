@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+p,h3{
+    @apply font-mono
+}
+.main-section {
+    @apply w-full h-full pt-20 pb-8 px-5 border-b-2 border-my-black;
+}
+.main-heading{
+    @apply text-5xl font-semibold mb-10 md:mb-16 text-center text-my-light-dark font-mono
+}
+.footer-link{
+    @apply flex items-center gap-2 text-my-white transition hover:text-my-golden
+  }
